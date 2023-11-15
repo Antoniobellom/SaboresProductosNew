@@ -14,27 +14,6 @@ const Body = () => {
       title: "Card Title 1",
       text: "Some quick example text to build on the card title and make up the bulk of the card's content.",
     },
-    {
-      image: "path/to/your/image2.jpg",
-      title: "Card Title 2",
-      text: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    },
-    {
-      image: "path/to/your/image2.jpg",
-      title: "Card Title 2",
-      text: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    },
-    {
-      image: "path/to/your/image2.jpg",
-      title: "Card Title 2",
-      text: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    },
-    {
-      image: "path/to/your/image2.jpg",
-      title: "Card Title 2",
-      text: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    },
-    // ...más datos de las cards
   ];
   return (
     <div>

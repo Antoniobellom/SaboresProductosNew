@@ -4,7 +4,7 @@
     margin: auto;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to match the screenshot */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
   .nombre-producto {
@@ -66,5 +66,14 @@
   .radio-input:checked + .radio-label {
     background-color: #FF00FF; 
     color: #fff; 
+  }
+  .imagen-contenedor {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .product-image {
+    width: 400px; 
+    height: auto; 
   }
   

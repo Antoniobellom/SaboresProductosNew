@@ -9,18 +9,11 @@ const Productos = () => {
   const [productoSeleccionado, setProductoSeleccionado] = useState(null);
   const [opcionEntrega, setOpcionEntrega] = useState("domicilio");
   const [cantidad, setCantidad] = useState(1);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const handleOpenModal = () => {
-    setIsModalOpen(true);
-  };
 
   const handleOpcionEntregaChange = (event) => {
     setOpcionEntrega(event.target.value);
     if (event.target.value === "tienda") {
-      setIsModalOpen(true);
     } else {
-      setIsModalOpen(false);
     }
   };
 
@@ -59,14 +52,11 @@ const Productos = () => {
     <div className="producto">
       {productoSeleccionado && (
         <>
-          <ModalRegiones
-            isOpen={isModalOpen}
-            onClose={() => setIsModalOpen(false)}
-          >
-            <Regiones />
-          </ModalRegiones>
           <p>brand</p>
           <h2 className="nombre-producto">{productoSeleccionado.nombre}</h2>
+          <div className="imagen-contenedor">
+          <img src={process.env.PUBLIC_URL + '/img/vainilla.png'} alt="Shaker Bottle" className="product-image" />
+          </div>
           <div className="precio-producto">
             <span className="descuento">{productoSeleccionado.descuento}%</span>
             <span className="precio-original">
@@ -124,7 +114,6 @@ const Productos = () => {
                 name="opcionEntrega"
                 value="tienda"
                 checked={opcionEntrega === "tienda"}
-                onClick={handleOpenModal}
                 onChange={handleOpcionEntregaChange} 
               />
               <label htmlFor="tienda" className="radio-label retiro-gratis">

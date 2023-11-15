@@ -60,4 +60,8 @@
   .action-button:hover {
     background-color: #ff66ff; 
   }
+  .product-image {
+    max-width: 100%; 
+    height: auto; 
+  }
   
