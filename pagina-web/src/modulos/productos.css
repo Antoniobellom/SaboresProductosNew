@@ -1,0 +1,70 @@
+.producto {
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to match the screenshot */
+  }
+  
+  .nombre-producto {
+    font-size: 24px; 
+    color: #333;
+  }
+  
+  .precio-producto {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .descuento {
+    background-color: red; 
+    color: white;
+    padding: 2px 5px;
+    margin-right: 10px;
+  }
+  
+  .precio-original {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .precio-descuento {
+    font-weight: bold;
+    color: green; 
+  }
+  
+  .sku-producto, .descripcion-producto {
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+
+.entrega-producto {
+    display: flex;
+    justify-content: start; 
+    gap: 10px; 
+    align-items: center; 
+  }
+  
+  .radio-label {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin-right: 10px; 
+    cursor: pointer;
+    border: 2px solid #FF00FF;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .radio-input {
+    display: none; 
+  }
+  
+  .radio-input:checked + .radio-label {
+    background-color: #FF00FF; 
+    color: #fff; 
+  }
+  

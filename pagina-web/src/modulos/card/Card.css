@@ -1,0 +1,63 @@
+.card {
+    width: 334px; 
+    height: 491.8px; 
+    background-color: #000; 
+    color: #fff; 
+    padding: 16px; 
+    position: relative; 
+    margin-top: 20px; 
+    margin-left: 20px; 
+    box-sizing: border-box; 
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 8px; 
+  }
+  
+  .discount-tag {
+    background-color: #FF00FF; 
+    padding: 4px 8px; 
+    border-radius: 4px; 
+    font-size: 0.85em; 
+  }
+  
+  
+  .product-image {
+    width: 100%; 
+    height: auto; 
+    margin-bottom: 8px; 
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column; 
+    gap: 8px; 
+  }
+  
+  .brand-info, .pricing-info, .shipping-info {
+    display: flex;
+    flex-direction: column; 
+  }
+  
+  
+  .original-price {
+    text-decoration: line-through; 
+  }
+  
+  .action-button {
+    background-color: #FF00FF; 
+    color: #fff; 
+    border: none; 
+    padding: 8px 16px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+  }
+  
+  
+  .action-button:hover {
+    background-color: #ff66ff; 
+  }
+  
